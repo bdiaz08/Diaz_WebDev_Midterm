@@ -6,18 +6,11 @@
 <body>
         <legend style="font-family:Helvetica"><strong>Registration Form</strong></legend>
         <table>
-            <tr><td>Username :</td></tr>
-            <tr><td><input type"text" 
-                            id="txtUname" 
-                            name="txtUname"
-                            placeholder="Enter username"/>
-                </td>
-            </tr>
-            <tr><td>Email Address :</td></tr> 
+            <tr><td>Email :</td></tr> 
             <tr><td><input type"text"  
                             id="txtEmail" 
                             name="txtEmail"
-                            placeholder="Enter email address"/>
+                            placeholder="Enter email"/>
                 </td>
             </tr> 
             <tr><td>Password :</td></tr>
@@ -27,6 +20,13 @@
                            placeholder="Enter password"/>
                 </td>
             </tr>
+            <tr><td>What genres do you love?</td></tr>
+            <tr><td><input type"text" 
+                           id="txtUname" 
+                           name="txtUname"
+                           placeholder="Specify 3 genres"/>
+                </td>
+            </tr>
             <tr><td>
              <input type="radio" 
                    id="loginType" 
@@ -34,6 +34,12 @@
                    value = "Male"
                    selected="selected"/>
              <label for="loginType">Male</label>
+             <input type="radio" 
+                   id="loginType" 
+                   name="loginType"
+                   value = "Female"
+                   selected="selected"/>
+             <label for="loginType">Female</label>
                 </td>
             </tr>    
             
