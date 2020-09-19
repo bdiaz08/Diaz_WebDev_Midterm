@@ -10,12 +10,8 @@ body{
         font-family: sans-serif;
       }
       .month {
-        text-allign: center;
-        background-color: gray;
-        font-size: 2.5em; 
-        letter-spacing: 5px; 
+        text-allign: right; 
         color: #FF0099; 
-        padding: 25px; 
         border: 1px solid #FF0099; 
       }
       table, th, td {
@@ -28,13 +24,6 @@ body{
       }
       tr, th, td {
         padding: 20px;
-      }
-      th {
-        background: gray;
-        color: #00FFFF; 
-      }
-      td {
-        background: gray; 
       }
       #bmonth {
         font-size: 20px;
