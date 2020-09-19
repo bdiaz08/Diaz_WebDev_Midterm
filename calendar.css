@@ -1,5 +1,13 @@
-body{
-   background-image: url("calendar.jpg");
-   background-size: cover;
-   background-repeat: no-repeat;
+*{  margin: 0;
+    padding: 8px;
+    box-sizing: border-box;
+}
+html{
+    font-size:150%;
+}
+
+ body{
+
+   background-image: url("https://bdiaz08.github.io/Diaz_WebDev_Midterm/calendar.jpg");
+   background-size: cover; 
 }
