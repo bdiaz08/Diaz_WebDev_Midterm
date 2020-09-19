@@ -1,5 +1,5 @@
 body{
    background-image: url("calendar.jpg");
-   background-size: 1024px 768px;
+   background-size: cover;
    background-repeat: no-repeat;
 }
