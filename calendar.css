@@ -7,7 +7,13 @@ html{
 }
 
  body{
-
    background-image: url("calendar.jpg");
    background-size: cover; 
 }
+.month h1{
+  font-size: 54px;
+  text-transform: uppercase;
+ 
+}
+
+
