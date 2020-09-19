@@ -1,1 +1,43 @@
 
+body{
+        background-color: black;
+   background-image: url("https://bdiaz08.github.io/Diaz_WebDev_Midterm/calendar.jpg%22);
+
+      }
+      .container {
+        max-width: 800px; 
+        margin: auto; 
+        font-family: sans-serif;
+      }
+      .month {
+        text-allign: center;
+        background-color: gray;
+        font-size: 2.5em; 
+        letter-spacing: 5px; 
+        color: #FF0099; 
+        padding: 25px; 
+        border: 1px solid #FF0099; 
+      }
+      table, th, td {
+        width: 100%; 
+        table-layout:fixed; 
+        text-allign: center; 
+        font-size: 16px; 
+        border-collapse: collapse; 
+        border: 1px solid #FF00FF;
+      }
+      tr, th, td {
+        padding: 20px;
+      }
+      th {
+        background: gray;
+        color: #00FFFF; 
+      }
+      td {
+        background: gray; 
+      }
+      #bmonth {
+        font-size: 20px;
+        background: gray;
+      }
+
