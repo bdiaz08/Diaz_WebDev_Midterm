@@ -1,5 +1,6 @@
 body{
    background-color: black;
    background-image: url("https://bdiaz08.github.io/Diaz_WebDev_Midterm/calendar.jpg");
-   background-size: cover;
+   background-size: 1024px 768px;
+   background-repeat: no-repeat;
 }
