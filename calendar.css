@@ -20,8 +20,8 @@ html{
     height:100vh;
     color:black;
     display: flex;
-    justify-content: right;
-    align-items:right;
+    justify-content: center;
+    align-items: center;
 }
 
 
