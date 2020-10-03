@@ -1,0 +1,313 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.whole-container{
+    max-width: 700px;
+    margin: 5vh auto;
+    height: 800px;
+    border-radius: 5px;
+    position: relative;
+    background: white;
+    filter: drop-shadow(0px 3px 3px black);
+}
+
+.top-section h1{
+    padding: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: 400;
+}
+
+.top-box-section{
+    background: lightcoral;
+    height: 50px;
+}
+
+.top-box-section h2{
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 10px;
+    justify-items: center;
+    color: white;
+    font-weight: 370;
+    font-style: italic;
+}
+
+.body-section{
+    padding-top: 3.5vh;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: 100;
+    padding-left: 3%;
+}
+
+
+.info{
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 300;
+    padding-top: 3%;
+    padding-left: 55%;
+    color: #0197f6;
+}
+.name-section{
+    padding-bottom: 5%;
+}
+.address-section{
+    padding-bottom: 5%;
+}
+.date-section{
+    padding-bottom: 5%;
+}
+
+
+
+.forms-name{
+    padding-top: 1.5vh;
+    padding-left: 3%;
+}
+.form-name{
+    width: 60%;
+    position: relative;
+    height: 45px;
+    overflow: hidden;
+}
+.form-name input{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    font-size: 16px;
+    color: #595f6e;
+    border: none;
+    outline: none;
+}
+.form-name label{
+    bottom: 0px;
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+.form-name label:after{
+    content: ""; 
+    position: absolute;
+    left: 0%;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform all 0.3s ease;
+}
+.content-name{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+.form-name input:focus + .label-name .content-name, 
+.form-name input:valid + .label-name .content-name{
+    transform: translateY(-150%); 
+    font-size: 14px;
+    color: #5fa8d3;
+}
+.form-name input:focus + .label-name::after, 
+.form-name input:valid + .label-name::after{
+    transform: translateX(0%);
+}
+
+
+.forms-address{
+    padding-top: 1.5vh;
+    padding-left: 3%;
+}
+.form-address{
+    width: 60%;
+    position: relative;
+    height: 45px;
+    background-color: blue;
+    overflow: hidden;
+}
+.form-address input{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    font-size: 16px;
+    color: #595f6e;
+    border: none;
+    outline: none;
+}
+.form-address label{
+    bottom: 0px;
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+.form-address label:after{
+    content: ""; 
+    position: absolute;
+    left: 0%;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform all 0.3s ease;
+}
+.content-address{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+.form-address input:focus + .label-address .content-address, 
+.form-address input:valid + .label-address .content-address{
+    transform: translateY(-150%); 
+    font-size: 14px;
+    color: #5fa8d3;
+}
+.form-address input:focus + .label-address::after, 
+.form-address input:valid + .label-address::after{
+    transform: translateX(0%);
+}
+
+
+.forms-date{
+    padding-top: 1.5vh;
+    padding-left: 3%;
+}
+.form-date{
+    width: 40%;
+    position: relative;
+    height: 45px;
+    background-color: blue;
+    overflow: hidden;
+}
+.form-date input{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    font-size: 16px;
+    color: #595f6e;
+    border: none;
+    outline: none;
+}
+.form-date label{
+    bottom: 0px;
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+.form-date label:after{
+    content: ""; 
+    position: absolute;
+    left: 0%;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform all 0.3s ease;
+}
+.content-date{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+.form-date input:focus + .label-date .content-date, 
+.form-date input:valid + .label-date .content-date{
+    transform: translateY(-150%); 
+    font-size: 14px;
+    color: #5fa8d3;
+}
+.form-date input:focus + .label-address::date, 
+.form-date input:valid + .label-address::date{
+    transform: translateX(0%);
+}
+
+
+.payment-section{
+    display: flex;
+    padding-top: 5vh;
+    padding-right: 58%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.payment{   
+    font-size: 18px;
+    font-weight: 100;
+    padding-left: 7%;
+    flex: 1;
+}
+.payment-button{
+    background: #2196F3;
+    padding: 12px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+.table{
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 5.5vh;
+    border-bottom: 1px solid black;
+}
+.table td, .table th{
+    padding: 12px 15px;
+    text-align: center;
+}
+.table th{
+    width: 30%;
+    background: lightcoral;
+    color: #ffffff;
+}
+.table tbody tr:nth-child(odd){
+    background-color: #f5f5f5;
+}
+
+
+.total{
+    display: flex;
+    justify-content: space-evenly; 
+    padding: 12px 15px;
+    width: 100%;
+    font-weight: 700;
+}
+.total-text{
+    padding-left: 67%;
+    flex:  1;
+}
+.total-amount{
+    padding-right: 7.5%;
+}
+
+
+
+
