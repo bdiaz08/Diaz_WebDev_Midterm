@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="pic">
+        <img src="https://images.pexels.com/photos/421129/pexels-photo-421129.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="picture">
+        
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Sign Up</h1>
+            <p>Register and listen to your favourite music at all times!</p>
+        </div>
+    </div>
+    <form id="form" onsubmit="return validateForm()">
+        <table>
+            <tr>
+                <td align="right">
+                    Username :
+                </td>
+                <td>
+                    <input class="inp" id="uname-id" type ="text"name ="Uname" placeholder="Enter Username">
+                    <br> <span class="error" id="uname_error">Username cannot be empty</span>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                   Email:
+                </td>
+                <td>
+                    <input required onkeydown="validateEmail()" class="inp eml" id="email-id" type ="Email" name ="Email" placeholder="Enter Email" >
+                    <br> <span id="error-email" class="error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                 Password:
+                </td>
+                <td>
+                    <input required onkeydown="validatePassword()" class="inp" id="password-id" type ="Password" name ="password_id" placeholder="Enter Password" minlength="3">
+                    <br> <span id="password-error" class="error">Error</span>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Gender:
+                </td>  
+            </tr>
+            <tr>
+                <td></td>
+                <td id="radio">
+                    Male <input id="male" class="rad" type="radio" name="gender" >
+                    Female <input id="female" class="rad" type="radio" name="gender" >    
+                </td> 
+            </tr>
+        </table>
+        <div id="gender-select" class="error">Please Select Gender</div>
+            <div class="terms"> <input type="checkbox" id="checker" name="agree">I accept<a class="link" href=""> <em>terms and conditions</em>.</a></div>
+            <span id="checker" class="error">Read and accept terms and conditions</span>
+        <div>
+            <table class="submit">
+                <tr>
+                    <td class=""><button type="submit-btn">Submit</button></td>
+                    <td class=""><button name="reset-btn" type="reset">Reset</button></td>
+                </tr>
+            </table>
+                         
+                    
+        </div>
+    </form>
+     
+</body>
+</html>

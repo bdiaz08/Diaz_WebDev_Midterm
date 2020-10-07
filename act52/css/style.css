@@ -1,0 +1,125 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    margin-left: 27%;
+    font-size: 40px;
+    margin-bottom: 3%;
+}
+
+.pic img{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    left: 35%;
+    top: 10vh;
+    background: white;
+    box-shadow: #F077E3 1px 5px 15px ;
+}
+
+.header{
+    margin-left: 11%;
+    margin-top: 3vh;
+}
+
+.inp{
+    width: 400px;
+    height: 30px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #F077E3 ;
+    margin: 15px;
+    outline: none;
+    font-size: 17px;
+}
+
+.inp:focus{ 
+    outline: none;
+}
+
+#radio{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+    
+}
+
+form{
+    position: absolute;
+    left: 36.4%;
+    top: 25%;
+    
+}
+table{
+    font-size: 17px;
+}
+table td{
+    align:right;
+}
+
+button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    background: none;
+    border: #F077E3 solid 2px;
+    color: black;
+}
+
+.terms{
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.submit{
+    margin-left: 20%;
+}
+button:hover{
+    border: none;
+    background-color: #F077E3;
+    color: #111;
+
+}
+.terms{
+    font-size: 17px;
+}
+.link{
+    color: #F077E3;
+}
+.error{
+    color: rgb(197, 45, 45);
+    display: none;
+    margin-left: 8px;
+}
+
+
+.weak{
+    border-bottom: orangered 1px solid;
+}
+.weak:focus{
+    border-bottom: orangered 1px solid;
+}
+.med{
+    border-bottom: orange 1px solid;
+}
+.med:focus{
+    border-bottom: orange 1px solid;
+}
+.strong{
+    border-bottom: #44d62c 1px solid;
+}
+.strong:focus{
+    border-bottom: #44d62c 1px solid;
+}
